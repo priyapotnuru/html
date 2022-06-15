@@ -1,0 +1,27 @@
+<html>
+<head>
+<body>
+<form id="form"onsubmit="create()">
+Name:<input type ="text"placeholder="enter the name" id="Name" /><br/>
+email id:<input type ="text"placeholder="enter the emailid" id="emailid"/><br/>
+password:<input type ="password"placeholder="enter the password"/><br/>
+phone no:<input type ="text"placeholder="enter the phoneno"/><br/>
+submit:<input type="submit"/>
+</form>
+<script>
+function create()
+{
+var Name=document.getElementById("Name").value;
+
+if(Name==""){
+alert("name must be filled");
+Name.focus();
+return false;
+}
+var emailid=document.getElementById("emailid").value;
+if(emailid=="")
+alert("enter valid emailid");
+}
+</script>
+</body>
+</html>
